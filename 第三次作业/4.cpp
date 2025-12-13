@@ -1,23 +1,18 @@
-#include<iostream>
-#include<string>
+#include<bits/stdc++.h>
+#define int long long
 using namespace std;
-
-int main(){
-    int N;
-    cin>>N;
-    string s=to_string(N);
-    int n=s.length();  
-    if(N==0){
-        cout<<"0";
-    }
-    else{
-            for(int i=0;i<n;i++){
-            cout<<s[i]-'0';
-                if(i<n-1){
-                    cout<<"   ";
-            }
-        }
-    }
-
-    
+string s;
+signed main(){
+	cin>>s;
+	int sz=(int)s.size();
+	for(int i=0;i<sz;i++){
+		cout<<s[i];
+		if((i+1)<sz) cout<<"   ";
+	}
+	return 0;
 }
+/*
+* * * 
+ * * *
+* * * 
+*/
